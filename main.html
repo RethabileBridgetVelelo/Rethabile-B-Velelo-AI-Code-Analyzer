@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Analyzer - AI CODE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+    <div class="container">
+        <header class="app-header">
+            <h1><i class="fas fa-code"></i> AI Code Analyzer</h1>
+            <div class="user-info">
+                <span id="username">Guest</span>
+                <button onclick="logout()" class="btn-small">Logout</button>
+            </div>
+        </header>
+        
+        <div class="editor-container">
+            <div class="editor-header">
+                <select id="language" title="Select programming language">
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="cpp">C++</option>
+                </select>
+                <button onclick="analyzeCode()" class="btn">Analyze Code</button>
+            </div>
+            <textarea id="code-editor" placeholder="Paste your code here...">// Example JavaScript code
+function example() {
+    console.log("Hello World");
+}</textarea>
+        </div>
+        
+        <div class="results-container">
+            <h3><i class="fas fa-chart-bar"></i> Analysis Results</h3>
+            <div class="score">Overall Score: <span id="score">0</span>/100</div>
+            <div id="issues"></div>
+            <div id="recommendations"></div>
+        </div>
+    </div>
+    <script src="analyzer.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>

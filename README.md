@@ -107,7 +107,7 @@ Interactive educational modules covering critical topics:
 ## 🗂️ **Project Structure**
 
 ```bash
-RETHABILE VELELO_ALCODE_ANALYZER/
+RETHAVELELO_ALCODE_ANALYZER/
 ├── 📄 index.html          # Terminal landing page
 ├── 🔐 login.html          # Authentication
 ├── 📝 register.html       # User registration
@@ -343,7 +343,7 @@ https://yourusername.github.io/AI-Code-Analyzer
 ```
 MIT License
 
-Copyright (c) 2025 Rethabile B. Velelo
+Copyright (c) 2024 Rethabile B. Velelo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
